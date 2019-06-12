@@ -1,0 +1,9 @@
+@media (min-width:768px){
+    .navbar-header{
+        width:268px;
+    }
+}
+
+.nav-item a .link-text{
+    display: none;
+}

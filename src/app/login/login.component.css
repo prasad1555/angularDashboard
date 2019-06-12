@@ -1,0 +1,24 @@
+.vh-100{
+    height: 100vh;
+}
+.w45{
+    width:40%;
+}
+#mainheader{
+    background: linear-gradient(45deg, #39A1CC, #778F99) !important;
+}
+.form-control{
+    border: none;
+    border-bottom: 1px solid !important;
+    border-radius: 0px;
+    outline: none;    
+    box-shadow: 0 0 0 0 #fff !important;
+}
+.form-control:active{
+    box-shadow: 0 0 0 0 #fff;
+}
+i.fa-custom-icon{
+    left: 10px ;
+    top: 8px;
+    font-size: 1.3rem;
+}

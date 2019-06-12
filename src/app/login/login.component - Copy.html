@@ -1,0 +1,34 @@
+<main id="mainheader">
+  <div class="container-fluid">
+    <div class="row vh-100 w-100">
+      <div class="col-md-10 offset-md-1 d-flex justify-content-center align-items-center h-100">
+        <div class="row w-100 h-75">
+          <div class="col-md-8 offset-md-2 h-100">
+            <div class="card h-100">
+                <div class="card-header">
+                    <h3 class="text-center"> LOGIN TO YOUR ACCOUNT </h3>
+                </div>
+              <div class="card-body">
+                <form (submit) = 'getUserDetails($event)' autocomplete="off">
+                  
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">UserName/Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group text-center">
+                    <button type="submit" class="btn btn-primary w-25">LOGIN</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

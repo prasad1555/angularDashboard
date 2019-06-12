@@ -1,0 +1,18 @@
+
+div.sidebar{
+    height: 100%;
+    width: 268px;                
+    overflow: auto;
+}
+.sideNavbar ul li{
+    text-transform: uppercase !important;
+}
+.sideNavbar ul li a{
+    line-height: 13px;
+}
+.sideNavbar ul li:hover{
+    background: #f8f9fa!important;
+}
+.active{
+    background: #f8f9fa!important;
+}

@@ -1,0 +1,46 @@
+<main id="mainheader">
+  <a href="/" class="position-absolute pt-2 pl-5 pr-5 pb-3">
+    <img src="../../assets/nextgen-logo-white.svg" alt="logo" width="200" height="48">
+  </a>
+  <div class="container-fluid">
+    <div class="row vh-100 w-100">
+      <div class="col-md-10 offset-md-1 d-flex justify-content-center align-items-center h-100">
+        <div class="row w-100 h-75 ">
+          <div class="col-md-8 offset-md-2 h-100 bg-white rounded-lg shadow">
+            <div class="row d-flex align-items-center h-100">
+              <div class="col p-5">
+                <div class="p-5">
+                  <img src="../../assets/img-01.png" alt="loginImage">
+                </div>
+              </div>
+              <div class="col p-5">
+
+                <h3 class="text-center mb-5 pb-3">
+                  Member Login
+                </h3>
+
+                <form (submit)='getUserDetails($event)' autocomplete="off">
+                  <div class="form-group position-relative"> 
+                      <i class="fas fa-user position-absolute fa-custom-icon"></i>
+                    <input type="email" class="form-control pl-5" id="exampleInputEmail1" aria-describedby="emailHelp"
+                      placeholder="Enter email">
+                  </div>
+                  <div class="form-group position-relative">
+                      <i class="fas fa-lock fa-custom-icon position-absolute"></i>
+                    <input type="password" class="form-control pl-5" id="exampleInputPassword1" placeholder="Password">
+                  </div>
+                  <div class="form-group text-center mt-5">
+                    <button type="submit" class="btn btn-primary w-50">LOGIN</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="text-center text-white mt-4"> 
+                ©2019 NXGN Management, LLC
+             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
