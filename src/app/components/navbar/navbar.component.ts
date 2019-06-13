@@ -1,3 +1,4 @@
+import { AppService } from './../../services/app.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -7,14 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  constructor(private appService: AppService) { }
 
   ngOnInit() {
   }
 
 
-  AtciveElement(){
-    
+  toggleSidebarPin() {
+    this.appService.toggleSidebarPin();
+  }
+  toggleSidebar() {
+    this.appService.toggleSidebar();
   }
 
 }

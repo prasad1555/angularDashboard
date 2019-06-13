@@ -7,3 +7,6 @@
 .nav-item a .link-text{
     display: none;
 }
+.bg-nav{
+    background: #dee2e6 !important;
+}

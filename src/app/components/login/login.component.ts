@@ -22,7 +22,10 @@ export class LoginComponent implements OnInit {
     const passWord = event.target.elements[1].value;
 
     console.log(userName, passWord);  
-    this.router.navigate(['/nextgen']);
+
+    if(userName === 'admin' && passWord === 'admin'){
+      this.router.navigate(['/nextgen']);
+    }
 
 }
 

@@ -16,3 +16,10 @@ div.sidebar{
 .active{
     background: #f8f9fa!important;
 }
+
+/* -------------- */
+
+div.sidebar.toggleMin{
+  width: 70px;
+}
+

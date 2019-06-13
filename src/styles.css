@@ -2,3 +2,11 @@
 body{
     min-height: 100vh;
 }
+
+.wrapper div.sidebar.toggeled-sidebar{    
+    width: 70px;
+  }
+
+  .wrapper div.sidebar.toggeled-sidebar .sideNavbar ul li span{
+    display: none;
+  }

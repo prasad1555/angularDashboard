@@ -5,7 +5,9 @@
     width:40%;
 }
 #mainheader{
-    background: linear-gradient(45deg, #39A1CC, #778F99) !important;
+    background: linear-gradient(160deg, #EBEFEE, #818285) !important;
+    /* background: url(../../../assets/adult-black-and-white-business-deal-1437866.jpg) no-repeat center;
+    background-size: cover; */
 }
 .form-control{
     border: none;

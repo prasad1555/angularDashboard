@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { AppService } from '../../services/app.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,10 +9,12 @@ import { NavbarComponent } from '../navbar/navbar.component';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
-  LineChart = [];
+  constructor(private appService: AppService) {}
   ngOnInit() {
     
   }
 
+
+  
+  
 }
