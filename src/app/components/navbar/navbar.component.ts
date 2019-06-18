@@ -1,5 +1,8 @@
 import { AppService } from './../../services/app.service';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { GaurdGuard } from 'src/app/gaurd.guard';
+
 
 @Component({
   selector: 'app-navbar',
@@ -8,7 +11,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private appService: AppService) { }
+  constructor(private appService: AppService, private Authgaurd: GaurdGuard, private router: Router) { }
 
   ngOnInit() {
   }
@@ -19,6 +22,17 @@ export class NavbarComponent implements OnInit {
   }
   toggleSidebar() {
     this.appService.toggleSidebar();
+  }
+
+
+  logOut(){
+
+    if(this.Authgaurd.isLoggedIn){
+      this.router.navigate(['/']);
+      return this.Authgaurd.isLoggedIn;
+      
+    }
+
   }
 
 }

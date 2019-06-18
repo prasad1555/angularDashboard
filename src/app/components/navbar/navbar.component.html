@@ -3,7 +3,7 @@
         <a href="javascript:void(0)" class="btn nav-link" (click)="toggleSidebar()"><i class="fa fa-bars"></i></a>
       </div>
   <div class="navbar-header pr-2 pl-3">
-    <a class="navbar-brand" href="/">
+    <a class="navbar-brand" href="javascript:void(0)">
       <img src="https://www.nexgenpackaging.com/wp-content/uploads/2019/01/nexgen-pkg-logo.png" alt="logoWhite"
         width="178" height="38">
     </a>
@@ -33,18 +33,18 @@
           <span class="nav-alert messages"></span>
         </a>
       </li>
-      <li class="nav-item">
+      <li class="nav-item" (click)="logOut()">
         <a class="btn nav-link">
           <i class="far fa-user"></i>
           <span class="link-text">Profile</span>
         </a>
       </li>
-      <li class="nav-item">
+      <!-- <li class="nav-item">
         <a class="btn nav-link">
           <i class="fas fa-cog"></i>
           <span class="link-text">Setting</span>
         </a>
-      </li>
+      </li> -->
     </ul>
   </div>
 </nav>

@@ -5,14 +5,24 @@
     width:40%;
 }
 #mainheader{
-    background: linear-gradient(160deg, #EBEFEE, #818285) !important;
-    /* background: url(../../../assets/adult-black-and-white-business-deal-1437866.jpg) no-repeat center;
-    background-size: cover; */
+    /* background: linear-gradient(160deg, #EBEFEE, #818285) !important; */
+    position: relative;
+}
+#mainheader:before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+    background: url(../../../assets//login.jpg) no-repeat center;
+    background-size: cover;
 }
 .form-control{
     border: none;
-    border-bottom: 1px solid !important;
-    border-radius: 0px;
+    /* border-bottom: 1px solid !important; */
+    border-radius: 5px;
     outline: none;    
     box-shadow: 0 0 0 0 #fff !important;
 }
@@ -22,5 +32,19 @@
 i.fa-custom-icon{
     left: 10px ;
     top: 8px;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+}
+
+.transBgLogin{
+    background-color: rgba(253, 249, 237, 0.4)!important;
+}
+
+.lightBlue{
+    color: #93aac1 !important;
+}
+.fs-1_2{
+    font-size:1.2rem;
+}
+.pos-r-2{
+    right: -76px;
 }
