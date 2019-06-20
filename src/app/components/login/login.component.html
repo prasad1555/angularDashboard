@@ -1,58 +1,44 @@
 <main id="mainheader">
-  
-  <div class="container-fluid">
-      
-    <div class="row vh-100 w-100 d-flex justify-content-center align-items-center">
-        
-      <div class="col-md-4 d-flex justify-content-center align-items-center p-5 pb-2">
-        <div class="row w-100 h-75 flex-column">
-            <!-- <div class="col-md-4 text-center"> -->
-                <!-- <div class="p-5">
-                  <img src="../../assets/img-01.png" alt="loginImage">
-                </div> -->
-                
-              <!-- </div> -->
-          <div class="col-md-10 offset-md-1 h-100 transBgLogin rounded-lg shadow">
-            <div class="row d-flex align-items-center h-100">
-              
-              <div class="col p-5">                  
-                  <a href="javascript:void(0)" class="d-block ml-auto w-75 mt-2 mb-5">
-                      <img src="https://www.nexgenpackaging.com/wp-content/uploads/2019/01/nexgen-pkg-logo.png" alt="logo" width="174" height="38">
-                    </a>
-                <h3 class="text-center mb-5 pb-3 lightBlue">
-                  Member Login
-                </h3>
 
-                <form (submit)='getUserDetails($event)' autocomplete="off">
-                  <div class="form-group position-relative"> 
-                      <i class="fas fa-user position-absolute fa-custom-icon lightBlue"></i>
-                    <input type="text" class="form-control pl-5" id="exampleInputEmail1" aria-describedby="emailHelp"
-                      placeholder="UserID ">
-                  </div>
-                  <div class="form-group position-relative">
-                      <i class="fas fa-lock fa-custom-icon position-absolute lightBlue"></i>
-                    <input type="password" class="form-control pl-5" id="exampleInputPassword1" placeholder="Password">
-                  </div>
-                  <div class="form-group pl-3">                    
-                      <input type="checkbox"> Remember  
-                    </div>
-                  <div class="form-group text-center mt-5">                    
-                    <button type="submit" class="btn btn-dark w-50 position-relative">LOGIN <i class="fas fa-sign-in-alt fa-custom-icon pl-3 position-absolute pos-r-2"></i></button>
-                    
-                  </div>
-                  <div class="form-group text-center mt-5">
-                      New user? <a href="javascript:void(0)" class="text-dark">Register Now</a>
-                    </div>
-                </form>
-              </div>
-            </div>
-            
+  <div class="container vh-100">
+    <div class="row justify-content-sm-center align-items-sm-center flex-column h-100">
+      <div class="col-sm-4 col-md-6 col-lg-5 transBgLogin rounded-lg shadow p-5 position-relative">
+        <div class="p-2">
+          <img src="https://www.nexgenpackaging.com/wp-content/uploads/2019/01/nexgen-pkg-logo.png" alt="logo"
+            width="174" height="38" class="img-fluid d-block m-auto">
+        </div>
+        <h3 class="text-center mb-5 pb-3 lightBlue">
+          Member Login
+        </h3>
+
+        <form (submit)='getUserDetails($event)' autocomplete="off" class="">
+          <div class="form-group position-relative">
+            <i class="fas fa-user position-absolute fa-custom-icon lightBlue"></i>
+            <input type="text" class="form-control pl-5" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="UserID ">
           </div>
-          <div class="text-center text-white mt-4">   
-              © Copyright {{ year }} nexgen | packaging 
-           </div>
+          <div class="form-group position-relative">
+            <i class="fas fa-lock fa-custom-icon position-absolute lightBlue"></i>
+            <input type="password" class="form-control pl-5" id="exampleInputPassword1" placeholder="Password">
+          </div>
+          <div class="form-group pl-3">
+            <input type="checkbox"> Remember
+          </div>
+          <div class="form-group text-center mt-5">
+            <button type="submit" class="btn btn-dark w-50 position-relative">LOGIN <i
+                class="fas fa-sign-in-alt fa-custom-icon pl-3 position-absolute pos-r-2"></i></button>
+
+          </div>
+          <div class="form-group text-center mt-5">
+            New user? <a href="javascript:void(0)" class="text-dark">Register Now</a>
+          </div>
+        </form>        
+        <div class="text-center text-white mt-4 position-absolute pos-l-13">
+          <p> © Copyright {{ year }} nexgen | packaging</p>
         </div>
       </div>
+
     </div>
   </div>
+
 </main>

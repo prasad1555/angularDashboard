@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule} from '@angular/router';
+import { FormsModule,  ReactiveFormsModule } from '@angular/forms';
+
 
 import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
@@ -13,6 +15,8 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { MaindasboardComponent } from './components/maindasboard/maindasboard.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RegisterComponent } from './components/register/register.component'
+import { MyserviceService } from './myservice.service'
 
 
 @NgModule({
@@ -25,14 +29,17 @@ import { HttpClientModule } from '@angular/common/http';
     NotfoundComponent,
     NavbarComponent,
     SidebarComponent,
-    MaindasboardComponent
+    MaindasboardComponent, 
+    RegisterComponent   
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [MyserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

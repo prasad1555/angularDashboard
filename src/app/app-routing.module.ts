@@ -7,9 +7,11 @@ import { DownloadsComponent } from '../app/components/downloads/downloads.compon
 import { MaindasboardComponent } from './components/maindasboard/maindasboard.component';
 import { GaurdGuard } from './gaurd.guard';
 import { NotfoundComponent } from './components/notfound/notfound.component';
+import { RegisterComponent } from './components/register/register.component';
 
 const routes: Routes = [
   { path: '', component: LoginComponent },
+  { path: 'register', component: RegisterComponent },
   { path: 'nextgen', 
     component: DashboardComponent,    
     canActivate:[GaurdGuard],

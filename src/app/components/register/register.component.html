@@ -1,0 +1,66 @@
+<main id="mainheader">
+
+  <div class="container vh-100">
+    <div class="row justify-content-sm-center align-items-sm-center flex-column h-100">
+      <div class="col-sm-4 col-md-6 col-lg-5 transBgLogin rounded-lg shadow p-5 position-relative">
+        <div class="p-2">
+          <img src="https://www.nexgenpackaging.com/wp-content/uploads/2019/01/nexgen-pkg-logo.png" alt="logo"
+            width="174" height="38" class="img-fluid d-block m-auto">
+        </div>
+        <h3 class="text-center mb-5 pb-3 lightBlue">
+          Register 
+        </h3>        
+
+        <form autocomplete="off" [formGroup]="myForm">
+          <div class="form-group position-relative text-center">
+            <i class="fas fa-user position-absolute fa-custom-icon lightBlue"></i>
+            <input type="text" class="form-control pl-5" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="User Name" formControlName="username">
+              <span class="text-danger fs-err" *ngIf="isValid('username')"> User name is Required </span>
+          </div>
+          <div class="form-group position-relative text-center">
+              <i class="fas fa-lock fa-custom-icon position-absolute lightBlue"></i>
+              <input type="password" class="form-control pl-5" id="exampleInputPassword1" placeholder="Password" formControlName="password">
+              <span  class="text-danger fs-err" *ngIf="isValid('password')"> Password Required  </span>
+            </div>
+            <div class="form-group position-relative text-center">
+              <i class="fas fa-lock fa-custom-icon position-absolute lightBlue"></i>
+              <input type="password" class="form-control pl-5" id="exampleInputPassword1" placeholder="Confirm Password" formControlName="cnfpass">
+              <span  class="text-danger fs-err" *ngIf="isValid('cnfpass')"> Password did not match  </span>
+            </div>
+          <div class="form-group position-relative text-center">
+            <!-- <i class="fas fa-lock fa-custom-icon position-absolute lightBlue"></i> -->
+            <i class="fas fa-phone-square-alt fa-custom-icon position-absolute lightBlue"></i>
+            <input type="text" class="form-control pl-5" id="exampleInputPassword1" placeholder="Phone Number" formControlName="contact">
+            <span  class="text-danger fs-err" *ngIf="isValid('contact')"> Enter a valid Contact Number </span>
+          </div>          
+          <div class="form-group position-relative text-center">
+            <!-- <i class="fas fa-lock fa-custom-icon position-absolute lightBlue"></i> -->
+            <i class="fas fa-envelope fa-custom-icon position-absolute lightBlue"></i>
+            <input type="text" class="form-control pl-5" id="exampleInputPassword1" placeholder="Email Address" formControlName="email">
+            <span  class="text-danger fs-err" *ngIf="isValid('email')"> Email is Invalid </span>
+          </div>
+          <!-- <div class="form-group pl-3">
+            <input type="checkbox"> Remember
+          </div> -->
+          <div class="form-group text-center mt-5">            
+                <button type="submit" class="btn btn-dark w-50 position-relative" (click) = "register()">Register <i
+                  class="fas fa-sign-in-alt fa-custom-icon pl-3 position-absolute pos-r-2"></i></button>
+          </div>
+          <div class="form-group text-center mt-5 d-none">
+            New user? <a href="javascript:void(0)" class="text-dark">Register Now</a>
+          </div>
+          <div class="form-group text-center mt-5">
+              Have an account ? <a href="javascript:void(0)" class="text-dark">Login</a>
+            </div>
+            <div class="text-white bg-dark"> {{ successMessage }}</div>
+        </form>
+        <div class="text-center text-white mt-4 position-absolute pos-l-13">
+          <p> © Copyright {{ year }} nexgen | packaging</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</main>
