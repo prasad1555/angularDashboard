@@ -10,15 +10,15 @@ import { Observable } from 'rxjs';
 
 export class GaurdGuard implements CanActivate, CanActivateChild, CanLoad {
 
-  isLoggedIn = false;
+  isLoggedIn:any = localStorage.getItem('token');
 
   constructor(private router: Router){}
 
   canActivate(
     next: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
-
-      if(this.isLoggedIn === true){
+      this.isLoggedIn = localStorage.getItem('token');
+      if(this.isLoggedIn != undefined || this.isLoggedIn != null){
           return true;
       }else{
         this.router.navigate(['/']);

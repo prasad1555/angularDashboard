@@ -61,12 +61,16 @@ export class RegisterComponent implements OnInit {
       this._myservice.submitRegister(this.myForm.value)
         .subscribe(
           data => this.successMessage = 'Registration Success',
-          error => this.successMessage = 'SOme error'
+          error => this.successMessage = 'Something went wrong'
         );
     }
   }
 
   movetologin() {
-    this._router.navigate(['../login'], { relativeTo: this._activatedRoute });
+    this._router.navigate(['/'], { relativeTo: this._activatedRoute });
   }
+
+  // routeLogin(){
+  //   this._router.navigate(['../login']
+  // }
 }
